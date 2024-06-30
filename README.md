@@ -1,2 +1,2 @@
 # SQL-notes
-常见SQL问题
+Leetcode刷题总结SQL问题及对应解题思路
