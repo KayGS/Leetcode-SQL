@@ -2,9 +2,13 @@
 __奇偶数__
 - mod(id,2) <> 0
 - In the SQL script you provided, the % symbol is being used as the modulo operator.
+- 
   In the CASE statement, id % 2 is used to determine if the id is odd or even. When id % 2 = 1, it means that the id is odd. Here's how it works:
+  
   id % 2 calculates the remainder when the id is divided by 2.
+  
   If the remainder is 1, it means the id is odd.
+  
   If the remainder is 0, it means the id is even.
   
 __累加__
