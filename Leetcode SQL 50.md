@@ -53,13 +53,6 @@ OFFSET 6 ROWS;
 - row_number()over(order by visited_on) as rk 开窗函数里也可以直接写order by 不需要 partition
 
 
-# 语句嵌套
-- ```sql
-  where (product_id, change_date) in
-  (select product_id, max(change_date) as last_change
-  ```
-
-
 # 其他
 - __Common Table Expression (CTE)__
 
@@ -182,6 +175,12 @@ delete 语句不能直接from选择，可用临时表来fromThe error you're enc
   ```
   having 语句count可以直接连 （select ......）
 - order by 里可以直接写count（），聚合函数
+
+# 语句嵌套
+- ```sql
+  where (product_id, change_date) in
+  (select product_id, max(change_date) as last_change
+  ```
 
 
 
